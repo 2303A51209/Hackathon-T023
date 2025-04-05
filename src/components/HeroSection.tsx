@@ -16,11 +16,14 @@ const HeroSection = () => {
               Bridging the gap between alumni and students in Technical Education Department, Government of Rajasthan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-rajasthan-orange hover:bg-rajasthan-orange/90 text-white font-bold">
-                Find a Mentor
+              <Button className="bg-rajasthan-orange hover:bg-rajasthan-orange/90 text-white font-bold" asChild>
+                <Link to="/login">Sign In</Link>
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-rajasthan-blue">
-                Join Our Community
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-rajasthan-blue" asChild>
+                <Link to="/register">Join Our Community</Link>
+              </Button>
+              <Button className="bg-rajasthan-blue hover:bg-rajasthan-blue/90 text-white font-bold" asChild>
+                <Link to="/dashboard">Dashboard</Link>
               </Button>
             </div>
           </div>
